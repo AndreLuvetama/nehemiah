@@ -1,17 +1,17 @@
 INSERT INTO TB_PESSOA(BATIZADO_NBATIZADO, CARGO, CARGO_ANTERIOR, COMENTARIO, DATA_NASC, EMPREGADO,ESTADO_CIVIL, IGREJA_ORIGEM, NACIONALIDADE, NOME, PROFISSAO,	REDES_SOCIAL, SEXO)
 
-VALUES(1, 'Pastor Senior', 'Pastor', 'Visitante', '1987-09-03', 3, 3, 'Monte Horebe', 'Angolana', 'Carlos Pacheco', 'Professor', 'pacheco_carlos', 'Masculino');
+VALUES(0, 'Pastor Senior', 'Pastor', 'Visitante', '1987-09-03', 0, 1, 'Monte Horebe', 'Angolana', 'Carlos Pacheco', 'Professor', 'pacheco_carlos', 'Masculino');
 
 INSERT INTO TB_PESSOA(BATIZADO_NBATIZADO, CARGO, CARGO_ANTERIOR, COMENTARIO, DATA_NASC, EMPREGADO,ESTADO_CIVIL, IGREJA_ORIGEM, NACIONALIDADE, NOME, PROFISSAO,	REDES_SOCIAL, SEXO)
 
-VALUES(1, 'Pastor cooperado', 'Evangelista', 'Visitante', '1980-09-03', 3, 3, 'Monte Horebe', 'Angolana', 'Carlos Pacheco', 'Professor', 'pacheco_carlos', 'Masculino');
+VALUES(1, 'Pastor cooperado', 'Evangelista', 'Visitante', '1980-09-03', 1, 0, 'Monte Horebe', 'Angolana', 'Carlos Pacheco', 'Professor', 'pacheco_carlos', 'Masculino');
 
 INSERT INTO TB_PESSOA(BATIZADO_NBATIZADO, CARGO, CARGO_ANTERIOR, COMENTARIO, DATA_NASC, EMPREGADO,ESTADO_CIVIL, IGREJA_ORIGEM, NACIONALIDADE, NOME, PROFISSAO,	REDES_SOCIAL, SEXO)
 
-VALUES(1, 'Pastor cooperado', 'Evangelista', 'Visitante', '1980-09-03', 3, 3, 'Monte Horebe', 'Brasil', 'Leonora', 'Professor', 'pacheco_carlos', 'Masculino');
+VALUES(1, 'Pastor cooperado', 'Evangelista', 'Visitante', '1980-09-03', 1, 0, 'Monte Horebe', 'Brasil', 'Leonora', 'Professor', 'pacheco_carlos', 'Masculino');
 INSERT INTO TB_PESSOA(BATIZADO_NBATIZADO, CARGO, CARGO_ANTERIOR, COMENTARIO, DATA_NASC, EMPREGADO,ESTADO_CIVIL, IGREJA_ORIGEM, NACIONALIDADE, NOME, PROFISSAO,	REDES_SOCIAL, SEXO)
 
-VALUES(1, 'Pastor cooperado', 'Profeta', 'Local', '1976-10-03', 2, 2, 'Casa Forte', 'RDC', 'Maria Mpaka', 'Professor', 'pacheco_carlos', 'Masculino');
+VALUES(0, 'Pastor cooperado', 'Profeta', 'Local', '1976-10-03', 1, 0, 'Casa Forte', 'RDC', 'Maria Mpaka', 'Professor', 'pacheco_carlos', 'Masculino');
 
 
 

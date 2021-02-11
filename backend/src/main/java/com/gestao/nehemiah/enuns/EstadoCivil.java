@@ -5,7 +5,7 @@ public enum EstadoCivil {
 	SOLTEIRO,
 	VIUVO,
 	NOVO,
-	MORANDO_JUNTO
+	MORANDO_JUNTO;
 	
 
 }

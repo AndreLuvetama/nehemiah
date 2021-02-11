@@ -1,12 +1,15 @@
 package com.gestao.nehemiah.dto;
 
 import java.io.Serializable;
+
 import java.util.Date;
+
 
 import com.gestao.nehemiah.cadastro.Pessoa;
 import com.gestao.nehemiah.enuns.Batizado;
 import com.gestao.nehemiah.enuns.Empregado;
 import com.gestao.nehemiah.enuns.EstadoCivil;
+
 
 public class PessoaDTO implements Serializable{	
 	private static final long serialVersionUID = 1L;
@@ -25,13 +28,15 @@ public class PessoaDTO implements Serializable{
 	private String igrejaOrigem;
 	private String cargoAnterior;
 	private Batizado batizadoNbatizado;
+	private String celular;
+
 	
 	
 	public PessoaDTO() {}
 	
 	public PessoaDTO(Long id, String nome, Date dataNasc, String sexo, String nacionalidade, String cargo,
 			String profissao, String redesSocial, EstadoCivil estadoCivil, String comentario, Empregado empregado,
-			String igrejaOrigem, String cargoAnterior, Batizado batizadoNbatizado) {
+			String igrejaOrigem, String cargoAnterior, Batizado batizadoNbatizado, String celular) {
 		
 		this.id = id;
 		this.nome = nome;
@@ -47,6 +52,7 @@ public class PessoaDTO implements Serializable{
 		this.igrejaOrigem = igrejaOrigem;
 		this.cargoAnterior = cargoAnterior;
 		this.batizadoNbatizado = batizadoNbatizado;
+		this.celular = celular;
 	}
 	
 	
@@ -66,6 +72,7 @@ public class PessoaDTO implements Serializable{
 		igrejaOrigem = entidade.getIgrejaOrigem();
 		cargoAnterior = entidade.getCargoAnterior();
 		batizadoNbatizado = entidade.getBatizadoNbatizado();
+		celular = entidade.getCelular();
 	}
 
 	public Long getId() {
@@ -180,7 +187,15 @@ public class PessoaDTO implements Serializable{
 		this.batizadoNbatizado = batizadoNbatizado;
 	}
 
-	
+	public String getCelular() {
+		return celular;
+	}
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+
 	
 
 }

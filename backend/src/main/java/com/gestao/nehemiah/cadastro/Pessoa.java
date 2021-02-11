@@ -1,7 +1,9 @@
 package com.gestao.nehemiah.cadastro;
+import  com.gestao.nehemiah.enuns.*;
 
 import java.io.Serializable;
 import java.util.Date;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,9 +11,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.gestao.nehemiah.enuns.Batizado;
-import com.gestao.nehemiah.enuns.Empregado;
-import com.gestao.nehemiah.enuns.EstadoCivil;
+
+
+
 
 @Entity
 @Table(name = "tb_pessoa")
@@ -34,15 +36,22 @@ public class Pessoa implements Serializable{
 	private Empregado empregado;
 	private String igrejaOrigem;
 	private String cargoAnterior;
+	//private Long batizadoNbatizado;
 	private Batizado batizadoNbatizado;
+	private String celular;
 	
+
 	
+
+
+
+
 	public Pessoa() {}
 
 
 	public Pessoa(Long id, String nome, Date dataNasc, String sexo, String nacionalidade, String cargo,
 			String profissao, String redesSocial, EstadoCivil estadoCivil, String comentario, Empregado empregado,
-			String igrejaOrigem, String cargoAnterior, Batizado batizadoNbatizado) {
+			String igrejaOrigem, String cargoAnterior, Batizado batizadoNbatizado, String celular) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -58,6 +67,17 @@ public class Pessoa implements Serializable{
 		this.igrejaOrigem = igrejaOrigem;
 		this.cargoAnterior = cargoAnterior;
 		this.batizadoNbatizado = batizadoNbatizado;
+		this.celular = celular;
+	}
+
+
+	public String getCelular() {
+		return celular;
+	}
+
+
+	public void setCelular(String celular) {
+		this.celular = celular;
 	}
 
 
@@ -199,6 +219,11 @@ public class Pessoa implements Serializable{
 	public void setBatizadoNbatizado(Batizado batizadoNbatizado) {
 		this.batizadoNbatizado = batizadoNbatizado;
 	}
+	
+	
+
+
+
 
 
 	@Override
